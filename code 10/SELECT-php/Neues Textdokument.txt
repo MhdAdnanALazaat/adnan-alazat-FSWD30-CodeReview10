@@ -1,0 +1,48 @@
+1- 
+
+$sql= "SELECT type, ISBN_code, Title , publish_date , short_description , status , 	picture FROM media WHERE type = 'cd'" ;
+
+	  $result = $conn->query($sql);////select status 'cd'
+            if (!$result) {
+                  echo "sql query failed";
+              } 
+
+2-
+
+$sql2= "SELECT type, ISBN_code, Title , publish_date , short_description , status , 	picture FROM media WHERE type = 'dvd'" ;
+
+	  $result = $conn->query($sql2);////select status 'available'
+            if (!$result) {
+                  echo "sql query failed";
+              } 
+
+
+3-
+
+$sql3= "SELECT type, ISBN_code, Title , publish_date , short_description , status , 	picture FROM media WHERE type = 'book'" ;
+
+	  $result = $conn->query($sql3);////select type 'book'
+            if (!$result) {
+                  echo "sql query failed";
+              } 
+
+4-
+
+$sql4= "SELECT type, ISBN_code, Title , publish_date , short_description , status , 	picture FROM media WHERE status = 'available'" ;
+
+	  $result = $conn->query($sql4);//select status 'available'
+            if (!$result) {
+                  echo "sql query failed";
+              } 
+
+5-
+
+$sql5= "SELECT type, ISBN_code, Title , publish_date , short_description , status , 	picture FROM media WHERE status = 'reserved'" ;
+
+	  $result = $conn->query($sql5);//select status 'reserved'
+            if (!$result) {
+                  echo "sql query failed";
+              } 
+
+
+
